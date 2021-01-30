@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Box Sizing</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .default {
+            background-color: burlywood;
+            border: 5px solid black;
+            width: 300px;
+            padding: 20px;
+            margin: 15px;
+
+        }
+
+        .borderbox {
+            background-color: rgb(46, 226, 115);
+            border: 5px solid black;
+            width: 300px;
+            padding: 20px;
+            margin: 15px;
+            box-sizing: border-box;
+        }
+    </style>
+    <h1>
+        Titre
+    </h1>
+    <h2>Sous titre</h2>
+    <div class="container">
+        <div class="default">
+            Ceci est une div avec box-sizing par défaut
+        </div>
+        <div class="borderbox">
+            Ceci est une div avec box-sizing = border-box
+        </div>
+        <div class="classic"></div>
+
+    </div>
+
+
+    <h2>Sous titre</h2>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Formulaire HTML</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1>Introduction au Formulaire HTML</h1>
+    <form action="destination.html" method="post">
+
+        <fieldset>
+            <legend>Fiche de renseignement</legend>
+
+            <label for="prenom">Prénom</label><br>
+            <input type="text" id="prenom" name="prenom" value="" required /><br>
+            <br>
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" name="nom" value="" /> <br>
+
+            <label for="nom">Email</label><br>
+            <input type="email" id="email" name="email" value="" /><br> <br>
+
+            <label for="nom">Date de rendez-vous</label><br>
+            <input type="date" id="daterdv" name="daterdv" value="" /> <br>
+
+            <label for="zone">Entrez le commentaire</label><br>
+            <textarea id="zone" rows="15" cols="80">
+
+            </textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Information supplémentaire</legend>
+            <input type="checkbox" id="cgv" name="cgv" value="" />
+            <label for="nom">Accepte les CGV</label><br>
+
+            <input type="radio" id="sombre" name="couleur" value="sombre" checked />
+            <label for="nom">Couleur sombre</label><br>
+
+            <input type="radio" id="clair" name="couleur" value="clair" />
+            <label for="nom">Couleur claire</label><br>
+
+
+            <label for="nom">D'où venez vous?</label><br>
+
+            <select id="codepostal">
+                <option value="75">Paris</option>
+                <option value="69">Lyon</option>
+                <option value="31">Toulouse</option>
+            </select>
+
+
+            <label for="departement">Choisir un département :</label>
+            <select name="departement" id="departement">
+                <optgroup label="Ile de France">
+                    <option value="haute-de-seine">Haut de seine</option>
+                    <option value="yvelines">Yvelines</option>
+                    <option value="oise">Oise</option>
+                </optgroup>
+                <optgroup label="Occitanie">
+                    <option value="tarn">Tarn</option>
+                    <option value="haute-garonne">Haute-Garonne</option>
+                </optgroup>
+            </select>
+
+
+
+            <button id="btn">Soumettre</button>
+
+            <br><br>
+            <label for="pays">Choisir un pays</label>
+            <input list="pays" name="LesPays" id="LesPays">
+
+            <datalist id="pays">
+                <option value="Albanie">
+                <option value="Allemagne">
+                <option value="Espagne">
+                <option value="Estonie">
+                <option value="France">
+                <option value="Italie">
+                <option value="Portugal">
+            </datalist>
+
+        </fieldset>
+
+        <input type="submit" id="submitButton" value="Soumettre" />
+    </form>
+
+</body>
+
+
+</html>
