@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        #pseudo::before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        #pseudo::after {
+            content: "";
+        }
+
+        #pseudo::selection {
+            background-color: red;
+        }
+
+        p::first-letter {
+            font-size: 4em;
+            color: green;
+        }
+    </style>
+    <h1>
+        Titre
+    </h1>
+    <h2>Sous titre</h2>
+    <div class="container">
+        <div id="pseudo">Hello</div>
+        <p>Ceci est un texte</p>
+    </div>
+
+
+    <h2>Sous titre</h2>
+
+
+
+</body>
+
+</html>
