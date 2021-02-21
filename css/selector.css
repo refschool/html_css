@@ -1,0 +1,31 @@
+.table {
+    border-collapse:collapse;
+}
+
+.table td {
+    border:1px solid black;
+}
+.table tr:nth-child(odd) {
+    background-color: red;
+}
+
+.table tr:nth-child(even) {
+    background-color: green;
+}
+
+
+.thick{
+    border:solid 5px;
+}
+
+.thin{
+    border:solid 1px;
+}
+
+.red {
+    border-color:red
+}
+
+.green {
+    border-color:green
+}

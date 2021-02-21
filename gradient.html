@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #dddddd
+        }
+
+        .round-corner {
+            margin: 3em;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .widget {
+            box-sizing: content-box;
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #gradient1 {
+            background-image: linear-gradient(#C33764, #1D2671);
+        }
+
+        #gradient2 {
+            background-image: linear-gradient(to right, #00F260, #0575E6);
+        }
+
+        #gradient3 {
+            background-image: linear-gradient(to right, #C6FFDD, #FBD786, #f7797d);
+        }
+
+        #gradient4 {
+            background-image: linear-gradient(to bottom right, #00F260, #0575E6);
+        }
+
+        #gradient5 {
+            background-image: linear-gradient(25deg, #00F260, #0575E6);
+        }
+
+        #gradient6 {
+            background-image: linear-gradient(to right, #00F260, #0575E6);
+        }
+
+
+        #radialgradient {
+            background-image: radial-gradient(circle at top left, #ee9ca7 5%, #ffdde1 80%);
+            /** background-image: radial-gradient(circle at 100%, #ee9ca7 5%, #ffdde1 80%); **/
+        }
+
+        #radialgradient2 {
+            background-image: radial-gradient(circle at bottom left, #3c1053 5%, #ad5389 80%);
+        }
+
+        #radialgradient3 {
+            background-image: radial-gradient(circle at 0%, #fc00ff 0%, #00dbde 100%);
+        }
+
+        #radialgradient4 {
+            background-image: radial-gradient(circle at 100%, #1e130c 5%, #9a8478 80%);
+        }
+
+        #radialgradient5 {
+            background-image: radial-gradient(closest-side, #1e130c, #9a8478);
+        }
+
+        #radialgradient6 {
+            background-image: radial-gradient(farthest-corner at 80px 80px, #55453C, #9a8478);
+        }
+    </style>
+    <h1>
+        Dégradés
+    </h1>
+    <h2>Dégradés linéaires</h2>
+    <div class="container">
+        <div id="gradient1" class="round-corner widget">To bottom (default)</div>
+        <div id="gradient2" class="round-corner widget">To right</div>
+    </div>
+    <div class="container">
+        <div id="gradient3" class="round-corner widget">To right 3 colors</div>
+        <div id="gradient4" class="round-corner widget">To bottom right</div>
+    </div>
+
+    <div class="container">
+        <div id="gradient5" class="round-corner widget">Angle 45deg</div>
+        <div id="gradient6" class="round-corner widget">To bottom right</div>
+    </div>
+
+    <h2>Dégradés radiaux</h2>
+    <div class="container">
+        <div id="radialgradient" class="round-corner widget">circle at top left</div>
+        <div id="radialgradient2" class="round-corner widget">circle at bottom left</div>
+    </div>
+    <div class="container">
+        <div id="radialgradient3" class="round-corner widget">circle at 0%</div>
+        <div id="radialgradient4" class="round-corner widget">circle at 100%</div>
+    </div>
+
+    <div class="container">
+
+        <div id="radialgradient5" class="round-corner widget">Closest Side</div>
+        <div id="radialgradient6" class="round-corner widget">farthest-corner at 80px 80px</div>
+    </div>
+
+
+
+</body>
+
+</html>
