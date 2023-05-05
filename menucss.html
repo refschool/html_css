@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown menu FINI tuto avec LCL</title>
+</head>
+
+<body>
+
+    <!-- copier à partir d'ici-->
+    <style>
+        /*https://chrisbracco.com/css-accessible-multi-level-dropdown-hover-navigation/*/
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            margin: 10px;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        /* Dropdown Content 2(Hidden by Default) */
+        .dropdown-content2 {
+            top: 0;
+            /*permet d'aligner le sous menu*/
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 2;
+            left: 160px;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+        .dropdown-content a:hover .dropdown-content2 {
+            display: block;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Links inside the dropdown-content2 */
+        .dropdown-content .dropdown-content2 a {
+            color: rgb(225, 9, 9);
+            padding: 12px 16px;
+            text-decoration: none;
+            /* display: block;*/
+        }
+
+        .dropdown-content .dropdown-content2 a:hover {
+            background-color: #ddd;
+        }
+    </style>
+
+
+
+
+    <!--Groupe 1-->
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown 1</button>
+        <div class="dropdown-content">
+            <ul style="list-style-type: none;  margin: 0;padding: 0;">
+                <li>
+                    <a href="#">Pomme de terre
+                        <ul class="dropdown-content2">
+                            <li style="padding:10px">Purée</li>
+                            <li style="padding:10px">Frites</li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!--Groupe 2-->
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown 2</button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="#">Link 4
+                        <ul class="dropdown-content2">
+                            <li><a href="#">sub link A</a></li>
+                            <li><a href="#">sub link B</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- fin de la copie-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

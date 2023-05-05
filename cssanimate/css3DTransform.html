@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        /* Transform with or without transition*/
+        /* the duration of the effect */
+        .box {
+            background-color: blueviolet;
+            padding: 15px;
+            width: 200px;
+            height: 200px;
+            transition: 1s ease-in-out
+        }
+
+        .box:hover {
+            transform: rotateY(90deg) rotateZ(180deg) rotateX(130deg);
+        }
+
+        #widget2 {
+            box-sizing: border-box;
+            width: 300px;
+            padding: 10px;
+            border: 5px solid black
+        }
+    </style>
+    <h1>
+        CSS 3D Transform
+    </h1>
+    <h2>Sous titre</h2>
+    <div class="container">
+        <div class="classic"></div>
+        <div class="classic"></div>
+        <div class="classic"></div>
+
+    </div>
+
+    <div id="widget1" class="box"> Boite dont la largeur varie</div>
+
+</body>
+
+</html>

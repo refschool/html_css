@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        .potard {
+            position: relative;
+            top: -30px;
+            left: 150px;
+            border: 1px solid red;
+            width: 50px;
+            transform: rotate(-90deg);
+        }
+
+        #slider {
+            transform-origin: bottom left;
+            transform: translate(30px, 50px) rotate(90deg);
+            background: rgb(73, 71, 72);
+            width: 400px;
+            height: 175px;
+        }
+    </style>
+
+
+    <div id="slider">
+        <p>Audio settings:</p>
+        <div>
+            <input type="range" id="volume_input" name="volume" min="0" max="11">
+            <p class="potard">VOL</p>
+        </div>
+
+        <div id="cowbell">
+            <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+            <p class="potard">COW</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

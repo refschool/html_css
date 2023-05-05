@@ -1,0 +1,118 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    border: 0px solid red;
+    background-color: white;
+}
+
+.rangee {
+    border: solid 0px rgb(12, 12, 214);
+    height: 300px;
+    margin:20px;
+}
+
+.header {
+    background-image: url("image.jpg");
+    background-position: 100px;
+}
+.photo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.plat {
+    width:280px;
+    margin-bottom:20px;
+    margin-left:5px;margin-right:5px;
+}
+
+.nom {
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.prix {
+
+    font-weight:bold;
+    /*position:absolute;*/
+    bottom:0px;
+
+}
+
+.menu {}
+
+.message {}
+
+.center-text {
+
+    text-align: center;
+}
+
+.btn-active {
+    background-color: green;
+    color: white;
+    width: 100px;
+    border: solid 1px green;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.btn {
+    color: green;
+    width: 100px;
+    border: solid 1px green;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+
+
+@media (max-width: 560px){
+
+    .btn-active {
+        background-color: red;
+        color: white;
+        width: 100px;
+        border: solid 1px green;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width:560px){
+
+    .btn-active {
+        background-color: blue;
+        color: white;
+        width: 150px;
+        border: solid 1px green;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .plat {
+        width:500px;
+    }
+
+}

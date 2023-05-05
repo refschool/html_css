@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>.
+    <style>
+        p {
+            width: 200px;
+            border: 1px solid;
+            padding: 2px 5px;
+
+            /* Both of the following are required for text-overflow */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .overflow-clip {
+            text-overflow: clip;
+        }
+
+        .overflow-ellipsis {
+            text-overflow: ellipsis;
+        }
+
+        .overflow-string {
+            text-overflow: " [..]";
+        }
+
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .ltr>p {
+            direction: ltr;
+        }
+
+        .rtl>p {
+            direction: rtl;
+        }
+    </style>
+    <div class="ltr">
+        <h2>Left to right text</h2>
+        <pre>ellipsis</pre>
+        <p class="overflow-ellipsis">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+    </div>
+
+    <p style="text-overflow: ellipsis;border:black 1px solid">Aux zestes d'orange Aux zestes
+        d'orangecccccccccccccccccc</p>
+</body>
+
+</html>

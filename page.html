@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+</head>
+
+<body>
+    <style>
+        .header {
+            height: 150px;
+            background-color: aquamarine;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        .widget {
+            border-radius: 5px;
+
+            border: solid black 1px;
+            height: 200px;
+            width: 23%;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        .footerwidget {
+
+            border: solid rgb(158, 25, 25) 1px;
+            height: 150px;
+            width: 30%
+        }
+
+        @media (max-width:600px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .widget {
+                border: solid black 1px;
+                height: 200px;
+                width: 100%
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .footerwidget {
+
+                border: solid rgb(158, 25, 25) 1px;
+                height: 150px;
+                width: 100%
+            }
+        }
+    </style>
+
+    <div class="container">
+        <div class="header">
+
+        </div>
+        <div class="row">
+            <div class="widget"></div>
+            <div class="widget"></div>
+            <div class="widget"></div>
+            <div class="widget"></div>
+        </div>
+        <div class="row">
+            <div class="widget"></div>
+            <div class="widget"></div>
+            <div class="widget"></div>
+            <div class="widget"></div>
+        </div>
+
+        <div class="footer">
+            <div class="footerwidget"></div>
+            <div class="footerwidget"></div>
+            <div class="footerwidget"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

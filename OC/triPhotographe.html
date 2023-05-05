@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            overflow: hidden;
+            border: solid 1px rgb(255, 0, 0);
+            width: 115px;
+            height: 25px;
+        }
+
+        .btn {
+            border: solid 1px black;
+            margin: 2px;
+            width: 100px;
+            cursor: pointer;
+            caret-color: transparent;
+        }
+    </style>
+    <div class="container">
+        <div class="btn" id="date">Date</div>
+        <div class="btn" id="pop">Popularité</div>
+        <div class="btn" id="titre">Titre</div>
+    </div>
+
+</body>
+<script>
+    const d = document
+    const container = d.querySelector('.container')
+    let secondClick = false
+
+    container.addEventListener('click', (e) => {
+
+        if (e.target != container) {
+
+            if (secondClick == false) {
+                container.style.height = '100px';
+            }
+
+            if (secondClick == true) {
+                newnode = e.target
+                const first = d.querySelector('.container').firstElementChild
+                container.insertBefore(newnode, first)
+                container.style.height = '25px';
+            }
+            secondClick = !secondClick
+        }
+
+    })
+
+
+</script>
+
+</html>

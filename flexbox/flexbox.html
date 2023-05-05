@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {}
+
+        .menu {
+            border: 1px solid red;
+            height: 30px;
+        }
+
+        .produits {
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        .produit {
+            width: 25%;
+            border: 1px solid green;
+            height: 150px;
+        }
+
+        /*smartphone*/
+        @media (max-width:500px) {
+            .produits {
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .produit {
+                width: 100%;
+                border: 1px solid green;
+                height: 150px;
+            }
+        }
+    </style>
+    <div class="container">
+
+        <div class="menu">
+
+        </div>
+        <div class="produits">
+            <div class="produit"></div>
+            <div class="produit"></div>
+            <div class="produit"></div>
+            <div class="produit"></div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
