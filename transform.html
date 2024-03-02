@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .test {
+            position: absolute;
+            top: 10px;
+            display: none;
+        }
+
+        label {
+            position: absolute;
+            top: 10px;
+            caret-color: transparent;
+        }
+
+        .menu {
+            border: 1px solid red;
+            height: 100px;
+            transition: height 1s;
+
+        }
+
+        input[type="checkbox"]:checked~div.menu {
+            background-color: aqua;
+            height: 300px;
+
+        }
+    </style>
+    <label for="test">X</label>
+    <input type="checkbox" class="test" id="test">
+    <div class="menu">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modale</title>
+</head>
+
+<body>
+    <style>
+        .btn {
+            border: solid 1px rgb(182, 182, 182);
+            display: inline;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 4px 3px 9px #888888;
+            cursor: pointer;
+        }
+
+        .modale {
+            position: absolute;
+            background: rgb(124, 124, 124);
+            padding: 30px;
+            width: 100%;
+            height: 100vh;
+            display: none;
+        }
+    </style>
+    <div class="modale">Le contenu de la modale
+        <div class="btn" id="fermer">
+            MODALE SHUT!
+        </div>
+
+    </div>
+    <div class="container">
+        <p>
+
+            Créer une fenêtre modale (également appelée "div modale") est une compétence utile dans le développement
+            web, car cela permet d'afficher du contenu supplémentaire ou des informations importantes de manière
+            élégante sans quitter la page actuelle. Voici un guide étape par étape sur la création d'une div modale en
+            HTML, CSS et JavaScript :
+
+        </p>
+        <p>
+            Explication :
+
+            La structure HTML contient un bouton pour ouvrir la fenêtre modale (<button id="openModalBtn">Ouvrir la
+                modal</button>) et la structure de la fenêtre modale elle-même, masquée par défaut (
+        <div id="myModal" class="modal">).
+
+            Les styles CSS définissent l'apparence de la fenêtre modale et son contenu, ainsi qu'un style pour le bouton
+            de fermeture.
+
+            Le JavaScript gère l'ouverture et la fermeture de la fenêtre modale en changeant la valeur de la propriété
+            CSS display de none à block et vice-versa.
+
+            Ainsi, en suivant ces étapes, vous pouvez créer une fenêtre modale simple dans votre site web pour afficher
+            du contenu supplémentaire de manière interactive. Vous pouvez personnaliser le contenu et le style de la
+            fenêtre modale en fonction de vos besoins.
+            </p>
+            <div class="btn" id="action">
+                MODALE GO!
+            </div>
+        </div>
+</body>
+<script>
+    let btn = document.querySelector('#action');
+    btn.addEventListener('click', function (event) {
+        let modal = document.querySelector('.modale');
+        modal.style.display = 'block';
+    });
+
+    let shut = document.querySelector('#fermer');
+    shut.addEventListener('click', function (event) {
+        let modal = document.querySelector('.modale');
+        modal.style.display = 'none';
+    });
+</script>
+
+</html>
