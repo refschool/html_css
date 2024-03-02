@@ -22,12 +22,15 @@
             background-color: red;
         }
 
-        .classic {
-            width: 200px;
-            height: 200px;
-            background-color: darkorange;
-            border: solid 1px black;
-            margin: 10px;
+        @media (min-width:600px) {
+
+            .classic {
+                width: 200px;
+                height: 200px;
+                background-color: darkorange;
+                border: solid 1px black;
+                margin: 10px;
+            }
         }
     </style>
     <h1>Qu'est ce que le Flexbox</h1>
@@ -40,7 +43,11 @@
 
 
     <h2>Avec les flexbox</h2>
-
+    <div class="container">
+        <div class="flexbox">Contenu de texte dans boite 1</div>
+        <div class="classic">Contenu de texte dans boite 2</div>
+        <div class="classic">Contenu de texte dans boite 3</div>
+    </div>
 
 
 </body>
