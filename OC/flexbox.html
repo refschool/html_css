@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (min-width:996px) {
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .image {
+                border: solid 1px black;
+                height: 100px;
+                background-color: rgb(21, 0, 253);
+                width: 25%;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:996px) {
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .image {
+                border: solid 1px black;
+                height: 100px;
+                background-color: rgb(217, 255, 2);
+                width: 33%;
+            }
+        }
+
+
+
+        @media (max-width:768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .image {
+                border: solid 1px black;
+                height: 100px;
+                width: 100%;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+</body>
+
+</html>
